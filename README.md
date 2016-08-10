@@ -3,7 +3,7 @@
 Starter config for a react-redux single-page app.
 
 - [x] Babel for transpiling ES6 into ES5
-- [ ] Webpack for bundling
+- [x] Webpack for bundling
 - [ ] Eslint for linting
 - [ ] React
 - [ ] Redux
