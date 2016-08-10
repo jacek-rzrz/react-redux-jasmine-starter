@@ -13,3 +13,4 @@ Starter config for a react-redux single-page app.
 - [ ] Redux
 - [ ] React Router
 - [ ] Hash in bundle url
+- [ ] Immutable

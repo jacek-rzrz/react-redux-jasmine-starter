@@ -18,14 +18,9 @@ var config = {
       },
     ],
   },
-  resolveLoader: {
-    root: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
   resolve: {
     root: [
-      path.join(__dirname, 'node_modules'),
+      path.resolve(path.join(__dirname, 'src', 'main', 'jsx'))
     ],
   },
 };
