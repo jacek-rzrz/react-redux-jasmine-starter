@@ -1,5 +1,5 @@
 var path = require('path');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var config = {
   context: path.join(__dirname, 'src', 'main', 'jsx'),
   entry: [
@@ -9,6 +9,13 @@ var config = {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'main', 'resources', 'templates', 'index.html'),
+      inject: 'head',
+      hash: true
+    })
+  ],
   module: {
     loaders: [
       {
