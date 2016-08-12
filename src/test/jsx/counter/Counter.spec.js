@@ -4,7 +4,7 @@ import { createRenderer } from 'react-addons-test-utils';
 
 describe('counter', () => {
 
-  it('rebders a button', () => {
+  it('renders a button', () => {
 
     const renderer = createRenderer();
     renderer.render(<Counter />);
