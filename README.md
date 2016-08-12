@@ -8,7 +8,7 @@ Starter config for a react-redux single-page app.
 - [x] Jasmine single run
 - [x] Jasmine watch
 - [x] LESS compilation
-- [ ] Eslint for linting
+- [x] Eslint for linting
 - [x] React
 - [ ] Redux
 - [ ] React Router
@@ -17,3 +17,4 @@ Starter config for a react-redux single-page app.
 - [ ] Immutable
 - [ ] Sample app with tests
 - [ ] Pretty test reporter
+- [ ] Enzyme

@@ -1,10 +1,15 @@
-import Counter from 'counter/Counter'
-
+import React from 'react';
+import Counter from 'counter/Counter';
+import { createRenderer } from 'react-addons-test-utils';
 
 describe('counter', () => {
 
-  it('works', () => {
-    console.log('inside test');
+  it('rebders a button', () => {
+
+    const renderer = createRenderer();
+    renderer.render(<Counter />);
+    const counter = renderer.getRenderOutput();
+    expect(counter.type).toBe('button');
   });
 
 
