@@ -18,3 +18,4 @@ Starter config for a react-redux single-page app.
 - [ ] Sample app with tests
 - [x] Pretty test reporter
 - [ ] Enzyme
+- [x] Object spread
