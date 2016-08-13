@@ -1,4 +1,8 @@
+var path = require('path');
 var webpackConfig = require('./webpack.config.js');
+webpackConfig.resolve.root.push(
+  path.resolve(path.join(__dirname, 'src', 'test', 'jsx'))
+);
 
 module.exports = function(config) {
   config.set({
@@ -22,12 +26,12 @@ module.exports = function(config) {
     autoWatchBatchDelay: 300,
 
     files: [
-      './src/test/jsx/**/*.js'
+      './src/test/jsx/**/*.spec.js'
     ],
 
     preprocessors: {
       './src/main/jsx/**/*.js': ['webpack'],
-      './src/test/jsx/**/*.spec.js': ['webpack']
+      './src/test/jsx/**/*.js': ['webpack']
     },
 
     webpack: webpackConfig,
