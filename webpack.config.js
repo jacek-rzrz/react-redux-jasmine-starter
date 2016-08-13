@@ -23,7 +23,7 @@ var config = {
     preLoaders: [
       {
         test: /\.jsx?$/,
-        loader: "eslint-loader", 
+        loader: "eslint-loader",
         exclude: /node_modules/
       }
     ],
@@ -32,6 +32,9 @@ var config = {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: ['babel'],
+      },
+      {
+          test: /\.json$/, loader: 'json'
       },
       {
                 test: /\.less$/,
@@ -49,5 +52,10 @@ var config = {
       path.resolve(path.join(__dirname, 'src', 'main', 'resources', 'less'))
     ],
   },
+  externals: {
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': 'window',
+    'react/addons': 'window'
+  }
 };
 module.exports = config;

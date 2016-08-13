@@ -17,5 +17,5 @@ Starter config for a react-redux single-page app.
 - [x] Immutable
 - [ ] Sample app with tests
 - [x] Pretty test reporter
-- [ ] Enzyme
+- [x] Enzyme with `jasmine-enzyme` assertions
 - [x] Object spread
