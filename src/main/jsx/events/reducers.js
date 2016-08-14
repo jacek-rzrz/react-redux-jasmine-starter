@@ -5,14 +5,14 @@ const event = (state, action) => {
   switch (action.type) {
 
     case 'CREATE_EVENT':
-      return Map.of();
+      return Map({ name: action.name });
 
     default:
       return state;
   }
 };
 
-export const eventList = (state = List.of(), action) => {
+export const events = (state = List.of(), action) => {
 
   switch (action.type) {
 
