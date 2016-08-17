@@ -1,4 +1,4 @@
-import { createEvent } from 'events/actions';
+import { createEvent } from 'events';
 
 describe('events / actions', () => {
 

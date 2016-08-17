@@ -21,3 +21,4 @@ Starter config for a react-redux single-page app.
 - [x] Examples of unit tests
 - [x] Examples of integration tests
 - [ ] Examples of router tests
+- [x] Examples of module exports from index.js

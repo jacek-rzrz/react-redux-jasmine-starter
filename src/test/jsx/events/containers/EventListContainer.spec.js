@@ -1,6 +1,5 @@
 import React from 'react';
-import Event from 'events/components/Event';
-import EventList from 'events/components/EventList';
+import { Event, EventList } from 'events';
 import { List, Map } from 'immutable';
 import { mount } from 'enzyme';
 import 'jasmine-enzyme-assertions';

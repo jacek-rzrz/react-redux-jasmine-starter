@@ -1,5 +1,5 @@
 import React from 'react';
-import Event from 'events/components/Event';
+import { Event } from 'events';
 import { mount } from 'enzyme';
 import 'jasmine-enzyme-assertions';
 

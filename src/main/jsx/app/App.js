@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuContainer from 'menu/containers/MenuContainer';
+import { MenuContainer } from 'menu';
 
 const App = ({children}) => (
   <div>

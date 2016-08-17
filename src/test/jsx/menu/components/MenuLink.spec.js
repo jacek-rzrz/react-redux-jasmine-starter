@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuLink from 'menu/components/MenuLink';
+import { MenuLink } from 'menu';
 import { shallow, mount } from 'enzyme';
 import { Link } from 'react-router';
 import 'jasmine-enzyme-assertions';
