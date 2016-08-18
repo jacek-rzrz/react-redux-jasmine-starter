@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var config = {
   context: path.join(__dirname, 'src', 'main'),
   entry: [
-    './jsx/index.js'
+    './scripts/index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -48,7 +48,7 @@ var config = {
   },
   resolve: {
     root: [
-      path.resolve(path.join(__dirname, 'src', 'main', 'jsx')),
+      path.resolve(path.join(__dirname, 'src', 'main', 'scripts')),
       path.resolve(path.join(__dirname, 'src', 'main', 'resources', 'less'))
     ],
   },
