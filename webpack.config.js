@@ -2,9 +2,9 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var config = {
-  context: path.join(__dirname, 'src', 'main'),
+  context: path.join(__dirname, 'src'),
   entry: [
-    './scripts/index.js'
+    './index.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -13,7 +13,7 @@ var config = {
   plugins: [
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'src', 'main', 'resources', 'templates', 'index.html'),
+      template: path.join(__dirname, 'index.html'),
       inject: 'head',
       hash: true
     })
@@ -48,8 +48,8 @@ var config = {
   },
   resolve: {
     root: [
-      path.resolve(path.join(__dirname, 'src', 'main', 'scripts')),
-      path.resolve(path.join(__dirname, 'src', 'main', 'resources', 'less'))
+      path.resolve(path.join(__dirname, 'src')),
+      path.resolve(path.join(__dirname, 'styles'))
     ],
   },
   externals: {
