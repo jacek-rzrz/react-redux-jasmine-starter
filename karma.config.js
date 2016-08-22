@@ -21,7 +21,7 @@ module.exports = function(config) {
     colors: false,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'], // 'Chrome' will work, too
     singleRun: false,
     autoWatchBatchDelay: 300,
 
