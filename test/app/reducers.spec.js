@@ -8,7 +8,7 @@ describe('app reducer', () => {
 
     const store = app(undefined, { type: undefined });
 
-    expect(store.events).toEqualImmutable(List.of());
+    expect(store.contacts).toEqualImmutable(List.of());
   });
 
 });

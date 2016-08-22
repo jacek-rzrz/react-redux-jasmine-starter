@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux';
-import { events } from 'events/reducers';
+import { contacts } from 'contacts/reducers';
 
-export const app = combineReducers({ events });
+export const app = combineReducers({ contacts });

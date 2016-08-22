@@ -1,10 +1,10 @@
 import { List, Map } from 'immutable';
 
-const event = (state, action) => {
+const contact = (state, action) => {
 
   switch (action.type) {
 
-    case 'CREATE_EVENT':
+    case 'CREATE_CONTACT':
       return Map({ name: action.name });
 
     default:
@@ -12,12 +12,12 @@ const event = (state, action) => {
   }
 };
 
-export const events = (state = List.of(), action) => {
+export const contacts = (state = List.of(), action) => {
 
   switch (action.type) {
 
-    case 'CREATE_EVENT':
-      return state.push(event(undefined, action));
+    case 'CREATE_CONTACT':
+      return state.push(contact(undefined, action));
 
     default:
       return state;
