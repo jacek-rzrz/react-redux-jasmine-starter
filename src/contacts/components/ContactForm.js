@@ -1,7 +1,7 @@
 import React from 'react';
 import { Map } from 'immutable';
 
-const ContactForm = ({ contact }) => {
+const ContactForm = ({ contact, onSubmit }) => {
 
   let title = 'Edit contact';
   if (!contact) {
@@ -10,11 +10,12 @@ const ContactForm = ({ contact }) => {
   }
 
   return (
-    <div>
+    <form onSubmit={onSubmit}>
       <h2>{title}</h2>
       <input type="text" className="name" defaultValue={contact.get('name') || ''} />
       <input type="text" className="date" defaultValue={contact.get('date') || ''} />
-    </div>
+      <button type="submit">Save</button>
+    </form>
   );
 };
 
